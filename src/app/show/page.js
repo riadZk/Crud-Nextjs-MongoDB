@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { redirect } from 'next/navigation';
 
 async function show(){
-
+    dbConnect();
     const users = await User.find();
 
     async function deleteUser(data){
